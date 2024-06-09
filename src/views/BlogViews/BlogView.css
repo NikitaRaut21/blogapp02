@@ -1,0 +1,23 @@
+.blog-t{
+    text-align: center;
+}
+.author-avtar{
+    height: 30px;
+    border-radius: 50%;
+
+}
+.main{
+   background-color: bisque;
+  width: 300px;
+  padding: 30px;
+  margin: 10px auto ;
+  border-radius: 10px;
+}
+.main:hover{
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.4);
+}
+.author-name{
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 10px;
+}
