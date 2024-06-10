@@ -1,7 +1,6 @@
-import "./BlogView.css"
 import { useParams } from "react-router-dom"
-import blogs from "./../../data"
-
+import blogs from "../../data/data"
+import "./BlogView.css"
 
 function BlogView() {
     const{id} = useParams()
@@ -13,9 +12,11 @@ function BlogView() {
       <h1 className="blog-t">{selectedBlog.title}</h1>
       <p className="author-name">
         <img src={selectedBlog.author.avatar} alt="author" className="author-avtar" height={"50px"}/>
+       <img src={selectedBlog.imgURL}/>
         {selectedBlog.author.name}|{selectedBlog.date}
       </p>
-      {selectedBlog.content}
+      {selectedBlog.content}<br></br>
+      {selectedBlog.price}
     </div>
   )
 }
