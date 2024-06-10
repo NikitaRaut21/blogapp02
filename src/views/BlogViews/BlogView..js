@@ -12,8 +12,9 @@ function BlogView() {
       <h1 className="blog-t">{selectedBlog.title}</h1>
       <p className="author-name">
         <img src={selectedBlog.author.avatar} alt="author" className="author-avtar" height={"50px"}/>
-       <img src={selectedBlog.imgURL}/>
-        {selectedBlog.author.name}|{selectedBlog.date}
+      
+        {selectedBlog.author.name}|{selectedBlog.date}<br></br>
+        <img src={selectedBlog.imgURL} className="mobile-img"/>
       </p>
       {selectedBlog.content}<br></br>
       {selectedBlog.price}
